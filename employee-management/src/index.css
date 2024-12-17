@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Global Styles */
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+}
+
+@layer components {
+  /* Custom Components */
+  /* Example button component styles */
+  .btn-primary {
+    @apply bg-primary text-white font-bold py-2 px-4 rounded;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-black font-bold py-2 px-4 rounded;
+  }
+}
+
+@layer utilities {
+  /* Custom utilities */
+  /* Example utility for flex center alignment */
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
